@@ -1,0 +1,15 @@
+C:\Users\kazuo\Documents\BlockchainApp\bin\Debug\net8.0\BlockchainApp.exe
+C:\Users\kazuo\Documents\BlockchainApp\bin\Debug\net8.0\BlockchainApp.deps.json
+C:\Users\kazuo\Documents\BlockchainApp\bin\Debug\net8.0\BlockchainApp.runtimeconfig.json
+C:\Users\kazuo\Documents\BlockchainApp\bin\Debug\net8.0\BlockchainApp.dll
+C:\Users\kazuo\Documents\BlockchainApp\bin\Debug\net8.0\BlockchainApp.pdb
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.AssemblyInfoInputs.cache
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.AssemblyInfo.cs
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.csproj.CoreCompileInputs.cache
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.sourcelink.json
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.dll
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\refint\BlockchainApp.dll
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.pdb
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\BlockchainApp.genruntimeconfig.cache
+C:\Users\kazuo\Documents\BlockchainApp\obj\Debug\net8.0\ref\BlockchainApp.dll
