@@ -10,27 +10,19 @@ public class Block{
     public string Data { get; set; }
     public int Nonce { get; set; }
 
-    public Block(DateTime timeStamp, string previousHash, string data){
-        Index = 0;
+    public Block(int index, DateTime timeStamp, string previousHash, string data){
+        Index = index;
         TimeStamp = timeStamp;
         PreviousHash = previousHash;
         Data = data;
-        Hash = CalculateHash();
-        Nonce = 0;
+        Hash = CreateHash();
     }
 
-    public string CalculateHash(){
-        SHA256 sha256 = SHA256.Create();
-        byte[] inputBytes = Encoding.ASCII.GetBytes($"{TimeStamp}-{PreviousHash ?? ""}-{Data}-{Nonce}");
-        byte[] outputBytes = sha256.ComputeHash(inputBytes);
-        return Convert.ToBase64String(outputBytes);
-    }
-
-    public void Mine(int difficulty){
-        var leadingZeros = new string('0', difficulty);
-        while(Hash == null || Hash.Substring(0, difficulty) != leadingZeros){
-            Nonce++;
-            Hash = CalculateHash();
+    public string CreateHash(){
+        using (SHA256 sha256 = SHA256.Create()){
+            string rawData = $"{Index}-{TimeStamp}-{PreviousHash ?? ""}-{Data}";
+            byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+            return BitConverter.ToString(bytes).Replace("-", "");
         }
     }
 }
